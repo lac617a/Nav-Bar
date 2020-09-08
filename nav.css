@@ -1,0 +1,125 @@
+* {
+	margin:0;
+	padding:0;
+}
+
+.header{
+	display: grid;
+    position: relative;
+	grid-template-columns: repeat(8, 1fr);
+}
+
+/* Estilos generales */
+.nav-bar {
+	grid-column: 3/-3;
+	width:100%;	
+}
+.nav-bar ul {
+	list-style:none;
+	padding: 0;
+}
+
+.nav-bar li{
+	line-height: 3rem;
+	position: relative;
+}
+
+.nav-bar a span {
+	position: absolute;
+	top: -55px;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	transition: all .3s ease;
+}
+
+.menu li ul{
+	position: absolute;
+}
+
+.nav-bar a {
+	color:#fff;
+	display:block;
+	line-height:20px;
+	padding:20px;
+	text-align:center;
+	text-decoration:none;
+	transition: .4s all ease-in-out;
+}
+
+.menu .sub-ul a{
+	line-height: 20px;
+	padding: 10px;
+}
+
+/* Hover */
+.menu a:hover {
+	background:#5da5a2;
+}
+
+.menu a:hover > span {
+	top:0;
+}
+
+/* Primer nivel */
+
+.menu {
+	display:table;
+	width:100%;
+	background:#000;
+}
+
+.menu .sub-ul li{
+	float: left;
+}
+
+/* Segundo nivel */
+
+.nav-bar li li {
+	background: #222;
+	max-height: 0;
+	overflow: hidden;
+	transition: all .5s ease-in-out;
+	width: 100%;
+}
+
+.menu > li > ul{
+	top: 100%;
+}
+
+.nav-bar ul li{
+	display: table-cell;
+}
+
+/* Hover */
+.nav-bar li:hover > ul > li{
+	max-height: 500px;
+	overflow: visible;
+}
+
+/* Tercer nivel */
+
+.nav-bar .sub__sub-ul{
+	left: 100%;
+	top: 0;
+	width: 100%;
+
+}
+
+/*-----------------------------Colores-----------------------*/
+.nav-bar a .primero {
+	background:#1ac2ec;
+}
+
+.nav-bar a .segundo {
+	background:#47d424;
+}
+
+.nav-bar a .tercero {
+	background:#f22424;
+}
+
+.nav-bar a .cuarto {
+	background:#174459;
+}
+/*-----------------------------Colores-----------------------*/
